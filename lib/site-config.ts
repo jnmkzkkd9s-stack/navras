@@ -172,3 +172,5 @@ export const heads: TeamMember[] = [
   { name: 'Shashwat Vijayvergia', role: 'HEAD', photo: '' },
   { name: 'Aparna Shrivastava', role: 'HEAD', photo: '' },
 ]
+
+export const members: TeamMember[] = []
