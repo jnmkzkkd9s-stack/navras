@@ -49,13 +49,22 @@ export function Hero() {
             className="animate-rise block drop-shadow-[0_0_28px_oklch(0.79_0.115_80/0.35)]"
             style={{ animationDelay: '0.45s' }}
           >
-            <span className="text-gold-gradient animate-shimmer block pl-[0.12em] font-serif text-7xl font-semibold leading-none tracking-[0.12em] sm:text-8xl md:text-[10rem]">
+            <span className="text-gold-gradient animate-shimmer block pl-[0.18em] font-serif text-7xl font-medium leading-none tracking-[0.18em] sm:text-8xl md:text-[10rem]">
               {site.name}
             </span>
           </span>
           <span
+            aria-hidden="true"
+            className="animate-rise mt-5 flex items-center gap-3"
+            style={{ animationDelay: '0.65s' }}
+          >
+            <span className="h-px w-12 bg-gradient-to-r from-transparent to-gold/70 md:w-20" />
+            <span className="size-1.5 rotate-45 bg-gold/80" />
+            <span className="h-px w-12 bg-gradient-to-l from-transparent to-gold/70 md:w-20" />
+          </span>
+          <span
             lang="hi"
-            className="animate-rise mt-3 font-deva text-4xl text-crimson drop-shadow-[0_0_24px_var(--crimson)] md:text-6xl"
+            className="animate-rise mt-4 font-deva text-4xl tracking-[0.08em] text-crimson drop-shadow-[0_0_24px_var(--crimson)] md:text-6xl"
             style={{ animationDelay: '0.8s' }}
           >
             {site.nameHindi}
@@ -76,14 +85,14 @@ export function Hero() {
         <div className="animate-rise mt-10 flex w-full flex-col gap-3 sm:w-auto sm:flex-row" style={{ animationDelay: '1.7s' }}>
           <a
             href="#about"
-            className="group relative inline-flex min-h-13 items-center justify-center overflow-hidden rounded-full bg-gold px-9 text-sm font-semibold uppercase tracking-[0.3em] text-ink shadow-[0_0_40px_-8px_var(--gold)] transition-transform hover:scale-[1.03]"
+            className="group relative inline-flex min-h-13 items-center justify-center overflow-hidden rounded-full bg-gold px-9 text-sm font-semibold uppercase tracking-[0.3em] text-ink shadow-[0_0_40px_-8px_var(--gold)] lux-btn hover:shadow-[0_10px_50px_-8px_var(--gold)]"
           >
             <span className="relative z-10">Explore NAVRAS</span>
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/50 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
           </a>
           <a
             href="#events"
-            className="inline-flex min-h-13 items-center justify-center rounded-full border border-foreground/25 px-9 text-sm uppercase tracking-[0.3em] text-foreground/90 transition-colors hover:border-gold hover:text-gold"
+            className="inline-flex min-h-13 items-center justify-center rounded-full border border-foreground/25 px-9 text-sm uppercase tracking-[0.3em] text-foreground/90 lux-btn hover:border-gold hover:bg-gold/5 hover:text-gold"
           >
             View Events
           </a>

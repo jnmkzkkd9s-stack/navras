@@ -51,7 +51,7 @@ export function ContactSection() {
                   <a
                     href={item.href}
                     {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    className="flex min-h-20 items-center gap-4 rounded-xl border border-border p-4 transition-colors hover:border-gold/60"
+                    className="flex min-h-20 items-center gap-4 rounded-xl border border-gold/20 p-4 lux-card"
                   >
                     {content}
                   </a>

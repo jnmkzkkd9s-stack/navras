@@ -150,7 +150,11 @@ export const gallery: { src: string; alt: string; category: Exclude<GalleryCateg
 
 export type TeamMember = { name: string; role: string; photo: string }
 
-/** Replace with real names, roles and photos (e.g. '/images/team/name.jpg'). Leave photo empty to show initials. */
+/**
+ * Replace with real names, designations and photos.
+ * Put photos in /public/images/team/ and set photo: '/images/team/name.jpg'.
+ * Portrait (4:5) photos look best. Leave photo empty to show the placeholder silhouette.
+ */
 export const heads: TeamMember[] = [
   { name: 'Member Name', role: 'President', photo: '' },
   { name: 'Member Name', role: 'Vice President', photo: '' },
