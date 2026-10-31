@@ -56,7 +56,7 @@ export function SiteHeader() {
 
         <a
           href="#register"
-          className="hidden rounded-full border border-gold/60 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.25em] text-gold transition-colors hover:bg-gold hover:text-ink lg:inline-flex"
+          className="hidden rounded-full border border-gold/60 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.25em] text-gold lux-btn hover:bg-gold hover:text-ink lg:inline-flex"
         >
           Auditions
         </a>

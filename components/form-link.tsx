@@ -34,6 +34,7 @@ export function FormLink({
       rel="noopener noreferrer"
       className={cn(
         base,
+        'lux-btn',
         variant === 'solid'
           ? 'bg-gold text-ink hover:shadow-[0_0_30px_-6px_var(--gold)]'
           : 'border border-gold/60 text-gold hover:bg-gold hover:text-ink',

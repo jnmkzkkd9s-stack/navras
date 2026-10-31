@@ -21,12 +21,18 @@ export const site = {
 export const links = {
   auditionForm: '',
   generalEventForm: '',
-  instagramUrl: '',
-  instagramHandle: '@your_handle_here',
+  instagramUrl: 'https://www.instagram.com/navras.2026/',
+  instagramHandle: '@navras.2026',
   email: '',
-  phone: '',
-  address: 'MGM Medical College, Indore, Madhya Pradesh',
+  address: 'MGM Medical College, Indore, Madhya Pradesh, India',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=MGM+Medical+College+Indore+Madhya+Pradesh+India',
 }
+
+export const phoneContacts = [
+  { name: 'Rohit Siloriya', phone: '+91 77738 63440' },
+  { name: 'Aparna Shrivastava', phone: '+91 97529 82031' },
+  { name: 'Shashwat Vijayvergia', phone: '+91 99507 27599' },
+]
 
 export const navItems = [
   { label: 'About', href: '#about' },
@@ -51,11 +57,8 @@ export const rasas = [
 
 export const about = {
   story:
-    'Navras is the pulsating heart of MGM Medical College’s festival, Nirvana 2026—a cultural committee bound together by pure passion, rhythm, and artistic fire.
-
-At the helm stand three committee heads from the 2022 batch: Aparna Shrivastava, Rohit Siloriya, and Shashwat Vijayvergia. As the visionaries and anchors of NAVRAS, they steer the entire cultural enterprise with steady leadership, balancing the intense demands of medical school with the creative spark needed to build a grand stage. Together with the other members of the 2022 batch, they form the foundation of the NAVRAS leadership team.
-
-Behind them stands a dynamic workforce spanning the 2023, 2024, and 2025 batches. Every committee member plays an indispensable role behind the scenes—managing complex schedules, refining technical details, coordinating rehearsals, and ensuring that every light, track, and cue lands flawlessly.:
+    'Placeholder — share the story of NAVRAS here: when the committee began, the festivals it has shaped, and the students who keep its stage alive alongside the demands of medical school.',
+  mission:
     'Placeholder — your mission statement. For example: to give every student at MGM a stage to express themselves through the arts.',
   stats: [
     { value: '9', label: 'Rasas we celebrate' },
@@ -153,7 +156,11 @@ export const gallery: { src: string; alt: string; category: Exclude<GalleryCateg
 
 export type TeamMember = { name: string; role: string; photo: string }
 
-/** Replace with real names, roles and photos (e.g. '/images/team/name.jpg'). Leave photo empty to show initials. */
+/**
+ * Replace with real names, designations and photos.
+ * Put photos in /public/images/team/ and set photo: '/images/team/name.jpg'.
+ * Portrait (4:5) photos look best. Leave photo empty to show the placeholder silhouette.
+ */
 export const heads: TeamMember[] = [
   { name: 'Member Name', role: 'President', photo: '' },
   { name: 'Member Name', role: 'Vice President', photo: '' },

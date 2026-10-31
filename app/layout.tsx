@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Inter, Tiro_Devanagari_Hindi } from 'next/font/google'
+import { Cormorant_Garamond, Jost, Tiro_Devanagari_Hindi } from 'next/font/google'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -10,7 +10,7 @@ const cormorant = Cormorant_Garamond({
   variable: '--font-cormorant',
   display: 'swap',
 })
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
+const jost = Jost({ subsets: ['latin'], variable: '--font-jost', display: 'swap' })
 const devanagari = Tiro_Devanagari_Hindi({
   subsets: ['devanagari'],
   weight: '400',
@@ -50,7 +50,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${devanagari.variable} bg-background`}>
+    <html lang="en" className={`${cormorant.variable} ${jost.variable} ${devanagari.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
