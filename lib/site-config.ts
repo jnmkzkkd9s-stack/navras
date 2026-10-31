@@ -98,7 +98,7 @@ export const events: EventItem[] = [
     date: '23/11',
     venue: 'MGM Auditorium',
     image: '/images/event-dance.png',
-    formUrl: '',
+    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc-jRF8sBsCLKOwvWMehc1KjnnRpgz8ovfuZkxnfs1fy1_R0Q/viewform?usp=dialog',
   },
   {
     title: 'Music',
@@ -109,7 +109,7 @@ export const events: EventItem[] = [
     date: '22/11',
     venue: 'MGM Auditorium',
     image: '/images/event-music.png',
-    formUrl: '',
+    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdA5NMOGNd_LJxDLaqDudT3AT6qQ-bzBsI_2QfN7FZ4d_LumA/viewform?usp=dialog',
   },
   {
     title: 'Mukhote',
@@ -117,10 +117,10 @@ export const events: EventItem[] = [
     rasa: 'Raudra',
     description:
       'Placeholder — stage plays, nukkad natak and skits. Add time limits and team requirements here.',
-    date: 'Date to be announced',
-    venue: 'Venue to be announced',
+    date: '22/10-23/10',
+    venue: 'Auditorium',
     image: '/images/event-theatre.png',
-    formUrl: '',
+    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfFQ0BoP13UajHYsN507HFjOYuzBq-BG6tioxkMONP-7qWLyg/viewform?usp=dialog',
   },
   {
     title: 'Fashion Walk',
@@ -134,15 +134,14 @@ export const events: EventItem[] = [
     formUrl: '',
   },
   {
-    title: 'Fine Arts & More',
-    category: 'Art, Literary & Open Stage',
+    title: 'Mgm Got Talent',
+    category: 'individual/group',
     rasa: 'Hasya',
     description:
-      'Placeholder — painting, poetry, stand-up, open mic and other cultural events. Add the full list here.',
-    date: 'Date to be announced',
-    venue: 'Venue to be announced',
+      'Placeholder — painting, poetry, stand-up, open mic and other cultural events.',
+    date: '24/11',
     image: '/images/gallery-festival.png',
-    formUrl: '',
+    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScU0vYB0_EGE-5UZY_cXICciftku2QuVM9vOiyU-C9X9cmJIA/viewform?usp=dialog',
   },
 ]
 
