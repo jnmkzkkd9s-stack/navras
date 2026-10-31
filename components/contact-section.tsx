@@ -1,5 +1,5 @@
 import type { ComponentType, ReactNode } from 'react'
-import { ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
+import { ExternalLink, MapPin, Phone } from 'lucide-react'
 import { Instagram } from '@/components/instagram-icon'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
@@ -84,30 +84,11 @@ function PhoneCard() {
   )
 }
 
-function EmailCard() {
-  return (
-    <div className={`${cardBase} border-border`}>
-      <CardIcon icon={Mail} />
-      <div className="flex min-w-0 flex-1 flex-col gap-1 pt-0.5">
-        <CardLabel>Email</CardLabel>
-        {links.email ? (
-          <a href={`mailto:${links.email}`} className="break-all text-base text-foreground hover:text-gold">
-            {links.email}
-          </a>
-        ) : (
-          <span className="text-base italic leading-relaxed text-muted-foreground">
-            Official email address to be added.
-          </span>
-        )}
-      </div>
-    </div>
-  )
-}
-
 export function ContactSection() {
   const cards = [
     {
       key: 'instagram',
+      className: 'md:col-start-1 md:row-start-1',
       node: (
         <ExternalCard
           href={links.instagramUrl}
@@ -118,10 +99,10 @@ export function ContactSection() {
         />
       ),
     },
-    { key: 'email', node: <EmailCard /> },
-    { key: 'phone', node: <PhoneCard /> },
+    { key: 'phone', className: 'md:col-start-2 md:row-span-2 md:row-start-1', node: <PhoneCard /> },
     {
       key: 'address',
+      className: 'md:col-start-1 md:row-start-2',
       node: (
         <ExternalCard
           href={links.mapsUrl}
@@ -138,9 +119,9 @@ export function ContactSection() {
     <section id="contact" aria-labelledby="contact-title" className="relative px-5 py-24 md:px-8 md:py-32">
       <div className="mx-auto max-w-5xl">
         <SectionHeading id="contact-title" eyebrow="Say Namaste" title="Contact" hindi="संपर्क" />
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2">
+        <ul className="mt-12 grid gap-4 md:grid-cols-2">
           {cards.map((card, i) => (
-            <Reveal as="li" key={card.key} delay={i * 80}>
+            <Reveal as="li" key={card.key} delay={i * 80} className={card.className}>
               {card.node}
             </Reveal>
           ))}

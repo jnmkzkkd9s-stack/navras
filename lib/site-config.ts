@@ -30,7 +30,7 @@ export const links = {
 
 export const phoneContacts = [
   { name: 'Rohit Siloriya', phone: '+91 77738 63440' },
-  { name: 'Aparana Shrivastava', phone: '+91 97529 82031' },
+  { name: 'Aparna Shrivastava', phone: '+91 97529 82031' },
   { name: 'Shashwat Vijayvergia', phone: '+91 99507 27599' },
 ]
 
