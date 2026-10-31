@@ -72,7 +72,7 @@ Together, the leaders, the crew, and the performers become a unified force, tran
     { value: '40', label: 'Members' },
   ],
   photos: [
-    { src: '/images/IMG_3873.jpeg', alt: 'NAVRAS committee group photograph (placeholder)' },
+    { src: '/images/Group.png', alt: 'NAVRAS committee group photograph (placeholder)' },
     { src: '/images/gallery-candid.png', alt: 'Committee members at a festival (placeholder)' },
   ],
 }
