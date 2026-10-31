@@ -12,7 +12,7 @@ function CornerOrnaments() {
       <span aria-hidden="true" className={cn(base, 'top-1.5 left-1.5 border-t border-l')} />
       <span aria-hidden="true" className={cn(base, 'top-1.5 right-1.5 border-t border-r')} />
       <span aria-hidden="true" className={cn(base, 'bottom-1.5 left-1.5 border-b border-l')} />
-      <span aria-hidden="true" className={cn(base, 'right-1.5 bottom-1.5 border-r border-b')} />
+   
     </>
   )
 }
