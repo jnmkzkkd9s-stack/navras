@@ -35,8 +35,8 @@ export function NavrasWordmark({ className }: { className?: string }) {
     <span className={cn('flex items-center gap-3', className)}>
       <NavrasMark />
       <span className="flex flex-col leading-none">
-        <span className="font-serif text-xl font-medium tracking-[0.3em] text-foreground">{site.name}</span>
-        <span lang="hi" className="mt-1 font-deva text-xs tracking-[0.12em] text-gold">
+        <span className="font-serif text-xl font-semibold tracking-[0.25em] text-foreground">{site.name}</span>
+        <span lang="hi" className="mt-1 font-deva text-xs text-gold">
           {site.nameHindi}
         </span>
       </span>

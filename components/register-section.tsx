@@ -37,7 +37,7 @@ export function RegisterSection() {
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {cards.map((c, i) => (
             <Reveal key={c.title} delay={i * 120}>
-              <div className="flex h-full flex-col gap-5 rounded-xl border border-gold/25 bg-ink/70 p-6 backdrop-blur lux-card md:p-8">
+              <div className="flex h-full flex-col gap-5 rounded-xl border border-gold/25 bg-ink/70 p-6 backdrop-blur md:p-8">
                 <div className="flex items-center justify-between">
                   <span className="flex size-12 items-center justify-center rounded-full border border-gold/40 text-gold">
                     <c.icon className="size-5" aria-hidden="true" />

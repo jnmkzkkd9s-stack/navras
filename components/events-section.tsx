@@ -28,7 +28,7 @@ export function EventsSection() {
                 (i === 0 ? ' lg:col-span-2 lg:row-span-1' : '')
               }
             >
-              <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-gold/20 bg-ink lux-card">
+              <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-ink transition-colors duration-500 hover:border-gold/50">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={event.image || '/placeholder.svg'}
@@ -43,7 +43,7 @@ export function EventsSection() {
                   </span>
                   <div className="absolute right-5 bottom-4 left-5">
                     <p className="text-[11px] uppercase tracking-[0.3em] text-foreground/70">{event.category}</p>
-                    <h3 className="font-serif text-3xl font-medium tracking-[0.01em] text-foreground md:text-4xl">{event.title}</h3>
+                    <h3 className="font-serif text-3xl font-semibold text-foreground md:text-4xl">{event.title}</h3>
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col gap-5 p-5">
