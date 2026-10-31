@@ -63,12 +63,13 @@ export const about = {
 At the helm stand three committee heads from the 2022 batch: Aparna Shrivastava, Rohit Siloriya, and Shashwat Vijayvergia. As the visionaries and anchors of NAVRAS, they steer the entire cultural enterprise with steady leadership, balancing the intense demands of medical school with the creative spark needed to build a grand stage. Together with the other members of the 2022 batch, they form the foundation of the NAVRAS leadership team.
 
 Behind them stands a dynamic workforce spanning the 2023, 2024, and 2025 batches. Every committee member plays an indispensable role behind the scenes—managing complex schedules, refining technical details, coordinating rehearsals, and ensuring that every light, track, and cue lands flawlessly.`,
-  mission:
-    'Placeholder — your mission statement. For example: to give every student at MGM a stage to express themselves through the arts.',
+  mission: `Yet, the true magic of NAVRAS comes alive when the curtains rise. Every performer—from dancers and musicians to actors and hosts—takes the stage to channel raw emotion, bringing the nine essence-defining rasas to life.
+
+Together, the leaders, the crew, and the performers become a unified force, transforming Nirvana 2026 from a college fest into an unforgettable legacy of art, passion, and togetherness.`,
   stats: [
     { value: '9', label: 'Rasas we celebrate' },
-    { value: '—', label: 'Events each year' },
-    { value: '—', label: 'Members & performers' },
+    { value: '10', label: 'Events' },
+    { value: '40', label: 'Members' },
   ],
   photos: [
     { src: '/images/about-group.png', alt: 'NAVRAS committee group photograph (placeholder)' },
@@ -90,12 +91,12 @@ export type EventItem = {
 export const events: EventItem[] = [
   {
     title: 'Dance',
-    category: 'Solo & Group',
+    category: 'Solo & Duet',
     rasa: 'Shringara',
     description:
       'Placeholder — classical, folk, Bollywood and contemporary dance. Add rules, team size and duration here.',
-    date: 'Date to be announced',
-    venue: 'Venue to be announced',
+    date: '23/11',
+    venue: 'MGM Auditorium',
     image: '/images/event-dance.png',
     formUrl: '',
   },
@@ -105,13 +106,13 @@ export const events: EventItem[] = [
     rasa: 'Shanta',
     description:
       'Placeholder — solo singing, bands, and instrumental performances. Add eligibility and format details here.',
-    date: 'Date to be announced',
-    venue: 'Venue to be announced',
+    date: '22/11',
+    venue: 'MGM Auditorium',
     image: '/images/event-music.png',
     formUrl: '',
   },
   {
-    title: 'Theatre',
+    title: 'Mukhote',
     category: 'Stage & Street',
     rasa: 'Raudra',
     description:
@@ -122,12 +123,12 @@ export const events: EventItem[] = [
     formUrl: '',
   },
   {
-    title: 'Fashion',
+    title: 'Fashion Walk',
     category: 'Ramp & Styling',
     rasa: 'Adbhuta',
     description:
       'Placeholder — themed fashion show and styling showcase. Add theme, team size and judging criteria here.',
-    date: 'Date to be announced',
+    date: '24/11',
     venue: 'Venue to be announced',
     image: '/images/event-fashion.png',
     formUrl: '',
@@ -170,15 +171,4 @@ export const heads: TeamMember[] = [
   { name: 'Rohit Siloriya', role: 'HEAD', photo: '' },
   { name: 'Shashwat Vijayvergia', role: 'HEAD', photo: '' },
   { name: 'Aparna Shrivastava', role: 'HEAD', photo: '' },
-]
-
-export const members: TeamMember[] = [
-  { name: 'Aryang Garg', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'member', photo: '' },
 ]
