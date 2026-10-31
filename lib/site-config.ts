@@ -94,7 +94,7 @@ export const events: EventItem[] = [
     category: 'Solo & Duet',
     rasa: 'Shringara',
     description:
-      'Placeholder — classical, folk, Bollywood and contemporary dance. Add rules, team size and duration here.',
+      'Placeholder — classical, folk, Bollywood and contemporary dance. ',
     date: '23/11',
     venue: 'MGM Auditorium',
     image: '/images/event-dance.png',
@@ -105,7 +105,7 @@ export const events: EventItem[] = [
     category: 'Vocal & Instrumental',
     rasa: 'Shanta',
     description:
-      'Placeholder — solo singing, bands, and instrumental performances. Add eligibility and format details here.',
+      'Placeholder — solo singing, bands, and instrumental performances. ',
     date: '22/11',
     venue: 'MGM Auditorium',
     image: '/images/event-music.png',
@@ -116,7 +116,7 @@ export const events: EventItem[] = [
     category: 'Stage & Street',
     rasa: 'Raudra',
     description:
-      'Placeholder — stage plays, nukkad natak and skits. Add time limits and team requirements here.',
+      'Placeholder — stage plays, nukkad natak and skits. ',
     date: '22/10-23/10',
     venue: 'Auditorium',
     image: '/images/event-theatre.png',
@@ -127,7 +127,7 @@ export const events: EventItem[] = [
     category: 'Ramp & Styling',
     rasa: 'Adbhuta',
     description:
-      'Placeholder — themed fashion show and styling showcase. Add theme, team size and judging criteria here.',
+      'Placeholder — themed fashion show and styling showcase. ',
     date: '24/11',
     venue: 'Venue to be announced',
     image: '/images/event-fashion.png',
