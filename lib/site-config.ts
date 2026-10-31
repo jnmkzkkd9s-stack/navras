@@ -56,10 +56,14 @@ export const rasas = [
 ]
 
 export const about = {
-  story:
-    'Navras is the pulsating heart of MGM Medical College’s festival, Nirvana 2026—a cultural committee bound together by pure passion, rhythm, and artistic fire.
+  // Paragraphs are separated by a blank line (\n\n).
+  // Split on '\n\n' in the component if you want separate <p> tags.
+  story: `Navras is the pulsating heart of MGM Medical College’s festival, Nirvana 2026—a cultural committee bound together by pure passion, rhythm, and artistic fire.
+
 At the helm stand three committee heads from the 2022 batch: Aparna Shrivastava, Rohit Siloriya, and Shashwat Vijayvergia. As the visionaries and anchors of NAVRAS, they steer the entire cultural enterprise with steady leadership, balancing the intense demands of medical school with the creative spark needed to build a grand stage. Together with the other members of the 2022 batch, they form the foundation of the NAVRAS leadership team.
-Behind them stands a dynamic workforce spanning the 2023, 2024, and 2025 batches. Every committee member plays an indispensable role behind the scenes—managing complex schedules, refining technical details, coordinating rehearsals, and ensuring that every light, track, and cue lands flawlessly. :
+
+Behind them stands a dynamic workforce spanning the 2023, 2024, and 2025 batches. Every committee member plays an indispensable role behind the scenes—managing complex schedules, refining technical details, coordinating rehearsals, and ensuring that every light, track, and cue lands flawlessly.`,
+  mission:
     'Placeholder — your mission statement. For example: to give every student at MGM a stage to express themselves through the arts.',
   stats: [
     { value: '9', label: 'Rasas we celebrate' },
@@ -164,17 +168,17 @@ export type TeamMember = { name: string; role: string; photo: string }
  */
 export const heads: TeamMember[] = [
   { name: 'Rohit Siloriya', role: 'HEAD', photo: '' },
-  { name: 'Sahaswat Vijayvergia', role: 'HEAD', photo: '' },
+  { name: 'Shashwat Vijayvergia', role: 'HEAD', photo: '' },
   { name: 'Aparna Shrivastava', role: 'HEAD', photo: '' },
 ]
 
 export const members: TeamMember[] = [
-  { name: 'aryang garg', role: 'member', photo: '' },
+  { name: 'Aryang Garg', role: 'member', photo: '' },
   { name: 'Member Name', role: 'member', photo: '' },
   { name: 'Member Name', role: 'member', photo: '' },
   { name: 'Member Name', role: 'member', photo: '' },
   { name: 'Member Name', role: 'member', photo: '' },
   { name: 'Member Name', role: 'member', photo: '' },
   { name: 'Member Name', role: 'member', photo: '' },
-  { name: 'Member Name', role: 'memeber', photo: '' },
+  { name: 'Member Name', role: 'member', photo: '' },
 ]
