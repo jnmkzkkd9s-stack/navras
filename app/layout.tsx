@@ -19,7 +19,7 @@ const devanagari = Tiro_Devanagari_Hindi({
 })
 
 export const metadata: Metadata = {
-  title: 'NAVRAS | नवरस — Cultural Committee, MGM Medical College Indore',
+  title: 'NAVRAS | नवरस — Cultural Committee, MGM Medical College,Indore',
   description:
     '9 Emotions. 1 Stage. Infinite Stories. NAVRAS is the Cultural Committee of MGM Medical College, Indore — dance, music, theatre, fashion and more.',
   generator: 'v0.app',
