@@ -163,19 +163,18 @@ export type TeamMember = { name: string; role: string; photo: string }
  * Portrait (4:5) photos look best. Leave photo empty to show the placeholder silhouette.
  */
 export const heads: TeamMember[] = [
-  { name: 'Member Name', role: 'President', photo: '' },
-  { name: 'Member Name', role: 'Vice President', photo: '' },
-  { name: 'Member Name', role: 'General Secretary', photo: '' },
-  { name: 'Member Name', role: 'Treasurer', photo: '' },
+  { name: 'Rohit Siloriya', role: 'HEAD', photo: '' },
+  { name: 'Sahaswat Vijayvergia', role: 'HEAD', photo: '' },
+  { name: 'Aparna Shrivastava', role: 'HEAD', photo: '' },
 ]
 
 export const members: TeamMember[] = [
-  { name: 'Member Name', role: 'Dance Head', photo: '' },
-  { name: 'Member Name', role: 'Music Head', photo: '' },
-  { name: 'Member Name', role: 'Theatre Head', photo: '' },
-  { name: 'Member Name', role: 'Fashion Head', photo: '' },
-  { name: 'Member Name', role: 'Design Head', photo: '' },
-  { name: 'Member Name', role: 'Media Head', photo: '' },
-  { name: 'Member Name', role: 'Logistics Head', photo: '' },
-  { name: 'Member Name', role: 'Sponsorship Head', photo: '' },
+  { name: 'aryang garg', role: 'member', photo: '' },
+  { name: 'Member Name', role: 'member', photo: '' },
+  { name: 'Member Name', role: 'member', photo: '' },
+  { name: 'Member Name', role: 'member', photo: '' },
+  { name: 'Member Name', role: 'member', photo: '' },
+  { name: 'Member Name', role: 'member', photo: '' },
+  { name: 'Member Name', role: 'member', photo: '' },
+  { name: 'Member Name', role: 'memeber', photo: '' },
 ]
