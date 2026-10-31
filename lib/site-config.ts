@@ -56,9 +56,11 @@ export const rasas = [
 ]
 
 export const about = {
-  story:
-    'Placeholder — share the story of NAVRAS here: when the committee began, the festivals it has shaped, and the students who keep its stage alive alongside the demands of medical school.',
-  mission:
+  story:Navras is the pulsating heart of MGM Medical College’s festival, Nirvana 2026—a cultural committee bound together by pure passion, rhythm, and artistic fire.
+
+At the helm stand three committee heads from the 2022 batch: Aparna Shrivastava, Rohit Siloriya, and Shashwat Vijayvergia. As the visionaries and anchors of NAVRAS, they steer the entire cultural enterprise with steady leadership, balancing the intense demands of medical school with the creative spark needed to build a grand stage. Together with the other members of the 2022 batch, they form the foundation of the NAVRAS leadership team.
+
+Behind them stands a dynamic workforce spanning the 2023, 2024, and 2025 batches. Every committee member plays an indispensable role behind the scenes—managing complex schedules, refining technical details, coordinating rehearsals, and ensuring that every light, track, and cue lands flawlessly.     :
     'Placeholder — your mission statement. For example: to give every student at MGM a stage to express themselves through the arts.',
   stats: [
     { value: '9', label: 'Rasas we celebrate' },
