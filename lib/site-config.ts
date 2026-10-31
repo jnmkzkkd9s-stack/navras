@@ -21,12 +21,18 @@ export const site = {
 export const links = {
   auditionForm: '',
   generalEventForm: '',
-  instagramUrl: '',
-  instagramHandle: '@your_handle_here',
+  instagramUrl: 'https://www.instagram.com/navras.2026/',
+  instagramHandle: '@navras.2026',
   email: '',
-  phone: '',
-  address: 'MGM Medical College, Indore, Madhya Pradesh',
+  address: 'MGM Medical College, Indore, Madhya Pradesh, India',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=MGM+Medical+College+Indore+Madhya+Pradesh+India',
 }
+
+export const phoneContacts = [
+  { name: 'Rohit Siloriya', phone: '+91 77738 63440' },
+  { name: 'Aparana Shrivastava', phone: '+91 97529 82031' },
+  { name: 'Shashwat Vijayvergia', phone: '+91 99507 27599' },
+]
 
 export const navItems = [
   { label: 'About', href: '#about' },
