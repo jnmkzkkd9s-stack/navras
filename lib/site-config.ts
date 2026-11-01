@@ -150,7 +150,7 @@ export type GalleryCategory = (typeof galleryCategories)[number]
 
 export const gallery: { src: string; alt: string; category: Exclude<GalleryCategory, 'All'> }[] = [
   { src: '/images/gallery-festival.png', alt: 'Festival night crowd (placeholder)', category: 'Festivals' },
-  { src: '/images/event-dance.png', alt: 'Group dance performance (placeholder)', category: 'Performances' },
+  { src: '/images/134157289937934207.png', alt: 'Group dance performance (placeholder)', category: 'Performances' },
   { src: '/images/gallery-backstage.png', alt: 'Getting ready backstage (placeholder)', category: 'Behind the Scenes' },
   { src: '/images/gallery-candid.png', alt: 'Friends at the festival (placeholder)', category: 'Candids' },
   { src: '/images/event-theatre.png', alt: 'Theatre performance (placeholder)', category: 'Performances' },
