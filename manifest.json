@@ -1,0 +1,13 @@
+{
+  "name": "NAVRAS — Cultural Committee, MGM Medical College Indore",
+  "short_name": "NAVRAS",
+  "description": "9 Emotions. 1 Stage. Infinite Stories.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#120c0b",
+  "theme_color": "#120c0b",
+  "icons": [
+    { "src": "apple-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

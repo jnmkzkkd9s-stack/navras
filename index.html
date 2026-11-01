@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-background">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#120c0b">
+  <title>NAVRAS | नवरस — Cultural Committee, MGM Medical College,Indore</title>
+  <meta name="description" content="9 Emotions. 1 Stage. Infinite Stories. NAVRAS is the Cultural Committee of MGM Medical College, Indore — dance, music, theatre, fashion and more.">
+
+  <meta property="og:title" content="NAVRAS | नवरस">
+  <meta property="og:description" content="9 Emotions. 1 Stage. Infinite Stories.">
+  <meta property="og:image" content="assets/hero.png">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="icon-light-32x32.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="icon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="font-sans antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-full focus:bg-gold focus:px-4 focus:py-2 focus:text-ink">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-transparent">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-18 md:px-8">
+      <a href="#top" aria-label="NAVRAS home" class="flex min-h-11 items-center" data-close-menu>
+        <span class="flex items-center gap-3">
+          <img src="assets/logo.jpg" alt="NAVRAS logo" width="40" height="40" class="size-10 shrink-0 rounded-full border border-gold/50 object-cover">
+          <span class="flex flex-col leading-none">
+            <span class="font-serif text-xl font-medium tracking-[0.3em] text-foreground">NAVRAS</span>
+            <span lang="hi" class="mt-1 font-deva text-xs tracking-[0.12em] text-gold">नवरस</span>
+          </span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden lg:block">
+        <ul class="flex items-center gap-8">
+          <li><a href="#about" class="text-sm uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold">About</a></li>
+          <li><a href="#events" class="text-sm uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold">Events</a></li>
+          <li><a href="#gallery" class="text-sm uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold">Gallery</a></li>
+          <li><a href="#team" class="text-sm uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold">Team</a></li>
+          <li><a href="#register" class="text-sm uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold">Register</a></li>
+          <li><a href="#contact" class="text-sm uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#register" class="hidden rounded-full border border-gold/60 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.25em] text-gold lux-btn hover:bg-gold hover:text-ink lg:inline-flex">Auditions</a>
+
+      <button type="button" id="menu-toggle" class="flex size-11 items-center justify-center rounded-full border border-gold/40 text-gold lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg data-icon-open xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu size-5" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+        <svg data-icon-close hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-5" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="fixed inset-x-0 top-16 bottom-0 bg-ink/98 backdrop-blur-lg transition-all duration-500 lg:hidden invisible opacity-0">
+      <nav aria-label="Mobile" class="flex h-full flex-col justify-between px-6 pt-8 pb-10">
+        <ul class="flex flex-col">
+          <li class="border-b border-border transition-all duration-500 -translate-x-4 opacity-0" style="transition-delay: 0ms"><a href="#about" data-close-menu class="flex min-h-16 items-center justify-between font-serif text-3xl text-foreground">About<span class="font-sans text-xs tracking-[0.3em] text-gold">01</span></a></li>
+          <li class="border-b border-border transition-all duration-500 -translate-x-4 opacity-0" style="transition-delay: 0ms"><a href="#events" data-close-menu class="flex min-h-16 items-center justify-between font-serif text-3xl text-foreground">Events<span class="font-sans text-xs tracking-[0.3em] text-gold">02</span></a></li>
+          <li class="border-b border-border transition-all duration-500 -translate-x-4 opacity-0" style="transition-delay: 0ms"><a href="#gallery" data-close-menu class="flex min-h-16 items-center justify-between font-serif text-3xl text-foreground">Gallery<span class="font-sans text-xs tracking-[0.3em] text-gold">03</span></a></li>
+          <li class="border-b border-border transition-all duration-500 -translate-x-4 opacity-0" style="transition-delay: 0ms"><a href="#team" data-close-menu class="flex min-h-16 items-center justify-between font-serif text-3xl text-foreground">Team<span class="font-sans text-xs tracking-[0.3em] text-gold">04</span></a></li>
+          <li class="border-b border-border transition-all duration-500 -translate-x-4 opacity-0" style="transition-delay: 0ms"><a href="#register" data-close-menu class="flex min-h-16 items-center justify-between font-serif text-3xl text-foreground">Register<span class="font-sans text-xs tracking-[0.3em] text-gold">05</span></a></li>
+          <li class="border-b border-border transition-all duration-500 -translate-x-4 opacity-0" style="transition-delay: 0ms"><a href="#contact" data-close-menu class="flex min-h-16 items-center justify-between font-serif text-3xl text-foreground">Contact<span class="font-sans text-xs tracking-[0.3em] text-gold">06</span></a></li>
+        </ul>
+        <p lang="hi" class="text-center font-deva text-4xl text-gold/30">नवरस</p>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="top" aria-labelledby="hero-title" class="grain relative flex min-h-svh flex-col overflow-hidden bg-ink">
+      <div class="absolute inset-0">
+        <img src="assets/hero.png" alt="" fetchpriority="high" decoding="async" class="absolute inset-0 size-full animate-slow-zoom object-cover object-[70%_center] opacity-70">
+        <div class="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/40 to-ink"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,var(--ink)_85%)]"></div>
+      </div>
+
+      <div aria-hidden="true" class="pointer-events-none absolute top-1/2 left-1/2 size-[130vw] max-h-[900px] max-w-[900px] -translate-x-1/2 -translate-y-1/2 animate-spin-slow rounded-full border border-gold/10">
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(0deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(40deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(80deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(120deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(160deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(200deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(240deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(280deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+        <span class="absolute top-1/2 left-1/2 -mt-[3px] -ml-[3px] size-1.5 rounded-full bg-gold/60 shadow-[0_0_12px_var(--gold)]" style="transform: rotate(320deg) translateY(calc(min(65vw, 450px) * -1))"></span>
+      </div>
+
+      <div class="relative z-10 mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center px-5 pt-24 pb-16 text-center">
+        <p class="animate-rise text-[11px] font-medium uppercase tracking-[0.4em] text-gold/90 md:text-xs" style="animation-delay: 0.2s">
+          The Cultural Committee · MGM Medical College, Indore
+        </p>
+
+        <h1 id="hero-title" class="mt-6 flex flex-col items-center">
+          <span class="animate-rise block drop-shadow-[0_0_28px_oklch(0.79_0.115_80/0.35)]" style="animation-delay: 0.45s">
+            <span class="text-gold-gradient animate-shimmer block pl-[0.18em] font-serif text-7xl font-medium leading-none tracking-[0.18em] sm:text-8xl md:text-[10rem]">NAVRAS</span>
+          </span>
+          <span aria-hidden="true" class="animate-rise mt-5 flex items-center gap-3" style="animation-delay: 0.65s">
+            <span class="h-px w-12 bg-gradient-to-r from-transparent to-gold/70 md:w-20"></span>
+            <span class="size-1.5 rotate-45 bg-gold/80"></span>
+            <span class="h-px w-12 bg-gradient-to-l from-transparent to-gold/70 md:w-20"></span>
+          </span>
+          <span lang="hi" class="animate-rise mt-4 font-deva text-4xl tracking-[0.08em] text-crimson drop-shadow-[0_0_24px_var(--crimson)] md:text-6xl" style="animation-delay: 0.8s">नवरस</span>
+        </h1>
+
+        <p class="animate-rise mt-8 max-w-md font-serif text-2xl italic leading-snug text-balance text-foreground/90 md:text-3xl" style="animation-delay: 1.1s">
+          9 Emotions. 1 Stage. Infinite Stories.
+        </p>
+
+        <div class="animate-rise mt-8" style="animation-delay: 1.4s">
+          <!-- Rotating rasa (animated by js/main.js) -->
+          <div class="flex flex-col items-center gap-4">
+            <div class="flex h-14 items-center justify-center" aria-live="off">
+              <p id="rasa-text" class="animate-rasa flex items-baseline gap-3">
+                <span lang="hi" class="font-deva text-2xl text-gold">शृंगार</span>
+                <span class="text-xs uppercase tracking-[0.35em] text-foreground/70">Shringara · Love</span>
+              </p>
+            </div>
+            <div id="rasa-dots" class="flex items-center gap-2" aria-hidden="true">
+              <span class="h-1 rounded-full transition-all duration-700 w-6 bg-gold shadow-[0_0_10px_var(--gold)]"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+              <span class="h-1 rounded-full transition-all duration-700 w-1.5 bg-foreground/25"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="animate-rise mt-10 flex w-full flex-col gap-3 sm:w-auto sm:flex-row" style="animation-delay: 1.7s">
+          <a href="#about" class="group relative inline-flex min-h-13 items-center justify-center overflow-hidden rounded-full bg-gold px-9 text-sm font-semibold uppercase tracking-[0.3em] text-ink shadow-[0_0_40px_-8px_var(--gold)] lux-btn hover:shadow-[0_10px_50px_-8px_var(--gold)]">
+            <span class="relative z-10">Explore NAVRAS</span>
+            <span class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/50 to-transparent transition-transform duration-700 group-hover:translate-x-full"></span>
+          </a>
+          <a href="#events" class="inline-flex min-h-13 items-center justify-center rounded-full border border-foreground/25 px-9 text-sm uppercase tracking-[0.3em] text-foreground/90 lux-btn hover:border-gold hover:bg-gold/5 hover:text-gold">View Events</a>
+        </div>
+      </div>
+
+      <a href="#rasas" aria-label="Scroll to the nine rasas" class="relative z-10 mx-auto mb-6 flex size-11 items-center justify-center text-gold/70 transition-colors hover:text-gold">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-6 animate-bounce" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ===================== THE NINE RASAS ===================== -->
+    <section id="rasas" aria-labelledby="rasas-title" class="relative overflow-hidden px-5 py-24 md:px-8 md:py-32">
+      <div aria-hidden="true" class="pointer-events-none absolute top-0 left-1/2 h-96 w-[40rem] -translate-x-1/2 rounded-full bg-crimson/15 blur-3xl"></div>
+      <div class="relative mx-auto max-w-6xl">
+        <div class="reveal flex max-w-2xl flex-col gap-4 mx-auto items-center text-center" style="transition-delay: 0ms">
+          <div class="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+            <span class="h-px w-8 bg-gradient-to-r from-transparent to-gold/70" aria-hidden="true"></span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="pl-[0.4em]">Natyashastra</span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="h-px w-8 bg-gradient-to-l from-transparent to-gold/70" aria-hidden="true"></span>
+          </div>
+          <h2 id="rasas-title" class="font-serif text-4xl font-medium leading-[1.05] tracking-[0.01em] text-balance text-foreground md:text-6xl">The Nine Emotions</h2>
+          <p lang="hi" class="font-deva text-xl tracking-wide text-crimson md:text-2xl">नव रस</p>
+          <p class="max-w-xl text-pretty font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">Bharata's Natyashastra names nine rasas — the emotional essences every performance seeks to awaken. They are the soul of our name and of every stage we build.</p>
+        </div>
+
+        <ol class="mt-14 grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-border bg-border md:mt-20">
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 0ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">01</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">शृंगार</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Shringara</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Love</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 70ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">02</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">हास्य</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Hasya</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Laughter</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 140ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">03</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">करुण</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Karuna</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Compassion</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 210ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">04</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">रौद्र</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Raudra</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Fury</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 280ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">05</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">वीर</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Veera</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Courage</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 350ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">06</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">भयानक</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Bhayanaka</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Fear</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 420ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">07</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">बीभत्स</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Bibhatsa</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Disgust</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 490ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">08</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">अद्भुत</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Adbhuta</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Wonder</span>
+          </li>
+          <li class="reveal group relative flex aspect-square flex-col items-center justify-center gap-2 bg-ink p-2 text-center transition-colors duration-500 hover:bg-crimson-deep/50 md:aspect-[4/3]" style="transition-delay: 560ms">
+            <span class="absolute top-2 left-2.5 text-[10px] tracking-widest text-gold/50 md:top-4 md:left-4 md:text-xs">09</span>
+            <span lang="hi" class="font-deva text-2xl text-gold transition-all duration-500 group-hover:glow-gold sm:text-3xl md:text-5xl">शांत</span>
+            <span class="font-serif text-sm text-foreground sm:text-base md:text-xl">Shanta</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:text-xs">Peace</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" aria-labelledby="about-title" class="relative px-5 py-24 md:px-8 md:py-32">
+      <div class="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2 lg:items-center lg:gap-20">
+        <div class="flex flex-col gap-8">
+          <div class="reveal flex max-w-2xl flex-col gap-4 items-start text-left" style="transition-delay: 0ms">
+            <div class="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+              <span class="h-px w-8 bg-gradient-to-r from-transparent to-gold/70" aria-hidden="true"></span>
+              <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+              <span class="pl-[0.4em]">About Us</span>
+              <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+              <span class="h-px w-8 bg-gradient-to-l from-transparent to-gold/70" aria-hidden="true"></span>
+            </div>
+            <h2 id="about-title" class="font-serif text-4xl font-medium leading-[1.05] tracking-[0.01em] text-balance text-foreground md:text-6xl">Where healers become performers</h2>
+            <p lang="hi" class="font-deva text-xl tracking-wide text-crimson md:text-2xl">हमारी कहानी</p>
+          </div>
+
+          <div class="reveal flex flex-col gap-6" style="transition-delay: 100ms">
+            <p class="text-lg leading-relaxed text-foreground/90">
+              <span class="font-serif text-2xl text-gold">NAVRAS</span> is the official Cultural Committee of MGM Medical College, Indore.
+            </p>
+            <div class="flex flex-col gap-2 border-l-2 border-crimson pl-5">
+              <h3 class="text-xs font-medium uppercase tracking-[0.3em] text-gold">Our Story</h3>
+              <p class="leading-relaxed text-muted-foreground">Navras is the pulsating heart of MGM Medical College’s festival, Nirvana 2026—a cultural committee bound together by pure passion, rhythm, and artistic fire.
+
+At the helm stand three committee heads from the 2022 batch: Aparna Shrivastava, Rohit Siloriya, and Shashwat Vijayvergia. As the visionaries and anchors of NAVRAS, they steer the entire cultural enterprise with steady leadership, balancing the intense demands of medical school with the creative spark needed to build a grand stage. Together with the other members of the 2022 batch, they form the foundation of the NAVRAS leadership team.
+
+Behind them stands a dynamic workforce spanning the 2023, 2024, and 2025 batches. Every committee member plays an indispensable role behind the scenes—managing complex schedules, refining technical details, coordinating rehearsals, and ensuring that every light, track, and cue lands flawlessly.</p>
+            </div>
+            <div class="flex flex-col gap-2 border-l-2 border-gold/60 pl-5">
+              <h3 class="text-xs font-medium uppercase tracking-[0.3em] text-gold">Our Mission</h3>
+              <p class="leading-relaxed text-muted-foreground">Yet, the true magic of NAVRAS comes alive when the curtains rise. Every performer—from dancers and musicians to actors and hosts—takes the stage to channel raw emotion, bringing the nine essence-defining rasas to life.
+
+Together, the leaders, the crew, and the performers become a unified force, transforming Nirvana 2026 from a college fest into an unforgettable legacy of art, passion, and togetherness.</p>
+            </div>
+          </div>
+
+          <div class="reveal" style="transition-delay: 200ms">
+            <dl class="grid grid-cols-3 gap-4 border-t border-border pt-6">
+              <div class="flex flex-col gap-1">
+                <dt class="order-2 text-[11px] uppercase leading-snug tracking-[0.2em] text-muted-foreground">Rasas we celebrate</dt>
+                <dd class="order-1 font-serif text-4xl text-gold md:text-5xl">9</dd>
+              </div>
+              <div class="flex flex-col gap-1">
+                <dt class="order-2 text-[11px] uppercase leading-snug tracking-[0.2em] text-muted-foreground">Events</dt>
+                <dd class="order-1 font-serif text-4xl text-gold md:text-5xl">10</dd>
+              </div>
+              <div class="flex flex-col gap-1">
+                <dt class="order-2 text-[11px] uppercase leading-snug tracking-[0.2em] text-muted-foreground">Members</dt>
+                <dd class="order-1 font-serif text-4xl text-gold md:text-5xl">40</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="reveal relative" style="transition-delay: 150ms">
+          <div class="relative aspect-[4/5] overflow-hidden rounded-xl border border-gold/20">
+            <img src="assets/intro.png" alt="NAVRAS committee heads together" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover object-bottom">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+            <p class="absolute bottom-4 left-4 text-[11px] uppercase tracking-[0.3em] text-foreground/70">Group photograph</p>
+          </div>
+          <div aria-hidden="true" class="absolute -top-4 -right-4 -z-10 size-full rounded-xl border border-crimson/50"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTS ===================== -->
+    <section id="events" aria-labelledby="events-title" class="relative bg-card/40 px-5 py-24 md:px-8 md:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal flex max-w-2xl flex-col gap-4 mx-auto items-center text-center" style="transition-delay: 0ms">
+          <div class="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+            <span class="h-px w-8 bg-gradient-to-r from-transparent to-gold/70" aria-hidden="true"></span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="pl-[0.4em]">On Stage</span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="h-px w-8 bg-gradient-to-l from-transparent to-gold/70" aria-hidden="true"></span>
+          </div>
+          <h2 id="events-title" class="font-serif text-4xl font-medium leading-[1.05] tracking-[0.01em] text-balance text-foreground md:text-6xl">Events</h2>
+          <p lang="hi" class="font-deva text-xl tracking-wide text-crimson md:text-2xl">कार्यक्रम</p>
+          <p class="max-w-xl text-pretty font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">Every art form, every emotion. Event details and dates will be announced soon — follow us on Instagram for updates.</p>
+        </div>
+
+        <ul class="-mx-5 mt-14 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 md:mx-0 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 lg:grid-cols-3">
+
+          <!-- Event: Dance -->
+          <li class="reveal w-[82vw] max-w-sm shrink-0 snap-center md:w-auto md:max-w-none lg:col-span-2 lg:row-span-1" style="transition-delay: 0ms">
+            <article class="group relative flex h-full flex-col overflow-hidden rounded-xl border border-gold/20 bg-ink lux-card">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img src="assets/event-dance.jpg" alt="Dance event (placeholder image)" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 rounded-full border border-gold/40 bg-ink/60 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-gold backdrop-blur">Shringara</span>
+                <div class="absolute right-5 bottom-4 left-5">
+                  <p class="text-[11px] uppercase tracking-[0.3em] text-foreground/70">Solo &amp; Duet</p>
+                  <h3 class="font-serif text-3xl font-medium tracking-[0.01em] text-foreground md:text-4xl">Dance</h3>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-5 p-5">
+                <p class="text-sm leading-relaxed text-muted-foreground">Placeholder — classical, folk, Bollywood and contemporary dance. </p>
+                <ul class="flex flex-col gap-2 text-sm text-foreground/80">
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days size-4 text-gold" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="sr-only">Date:</span>23/11
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin size-4 text-gold" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span class="sr-only">Venue:</span>MGM Auditorium
+                  </li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-jRF8sBsCLKOwvWMehc1KjnnRpgz8ovfuZkxnfs1fy1_R0Q/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-xs font-semibold uppercase tracking-[0.25em] transition-all lux-btn bg-gold text-ink hover:shadow-[0_0_30px_-6px_var(--gold)] mt-auto w-full">
+                  Register
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  <span class="sr-only">(opens Google Form in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <!-- Event: Music -->
+          <li class="reveal w-[82vw] max-w-sm shrink-0 snap-center md:w-auto md:max-w-none" style="transition-delay: 80ms">
+            <article class="group relative flex h-full flex-col overflow-hidden rounded-xl border border-gold/20 bg-ink lux-card">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img src="assets/event-music.png" alt="Music event (placeholder image)" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 rounded-full border border-gold/40 bg-ink/60 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-gold backdrop-blur">Shanta</span>
+                <div class="absolute right-5 bottom-4 left-5">
+                  <p class="text-[11px] uppercase tracking-[0.3em] text-foreground/70">Vocal &amp; Instrumental</p>
+                  <h3 class="font-serif text-3xl font-medium tracking-[0.01em] text-foreground md:text-4xl">Music</h3>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-5 p-5">
+                <p class="text-sm leading-relaxed text-muted-foreground">Placeholder — solo singing, bands, and instrumental performances. </p>
+                <ul class="flex flex-col gap-2 text-sm text-foreground/80">
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days size-4 text-gold" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="sr-only">Date:</span>22/11
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin size-4 text-gold" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span class="sr-only">Venue:</span>MGM Auditorium
+                  </li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA5NMOGNd_LJxDLaqDudT3AT6qQ-bzBsI_2QfN7FZ4d_LumA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-xs font-semibold uppercase tracking-[0.25em] transition-all lux-btn bg-gold text-ink hover:shadow-[0_0_30px_-6px_var(--gold)] mt-auto w-full">
+                  Register
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  <span class="sr-only">(opens Google Form in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <!-- Event: Mukhote -->
+          <li class="reveal w-[82vw] max-w-sm shrink-0 snap-center md:w-auto md:max-w-none" style="transition-delay: 160ms">
+            <article class="group relative flex h-full flex-col overflow-hidden rounded-xl border border-gold/20 bg-ink lux-card">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img src="assets/event-theatre.png" alt="Mukhote event (placeholder image)" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 rounded-full border border-gold/40 bg-ink/60 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-gold backdrop-blur">Raudra</span>
+                <div class="absolute right-5 bottom-4 left-5">
+                  <p class="text-[11px] uppercase tracking-[0.3em] text-foreground/70">Stage &amp; Street</p>
+                  <h3 class="font-serif text-3xl font-medium tracking-[0.01em] text-foreground md:text-4xl">Mukhote</h3>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-5 p-5">
+                <p class="text-sm leading-relaxed text-muted-foreground">Placeholder — stage plays, nukkad natak and skits. </p>
+                <ul class="flex flex-col gap-2 text-sm text-foreground/80">
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days size-4 text-gold" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="sr-only">Date:</span>22/10-23/10
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin size-4 text-gold" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span class="sr-only">Venue:</span>Auditorium
+                  </li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFQ0BoP13UajHYsN507HFjOYuzBq-BG6tioxkMONP-7qWLyg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-xs font-semibold uppercase tracking-[0.25em] transition-all lux-btn bg-gold text-ink hover:shadow-[0_0_30px_-6px_var(--gold)] mt-auto w-full">
+                  Register
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  <span class="sr-only">(opens Google Form in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <!-- Event: Fashion Walk (form not open yet) -->
+          <li class="reveal w-[82vw] max-w-sm shrink-0 snap-center md:w-auto md:max-w-none" style="transition-delay: 240ms">
+            <article class="group relative flex h-full flex-col overflow-hidden rounded-xl border border-gold/20 bg-ink lux-card">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img src="assets/event-fashion.png" alt="Fashion Walk event (placeholder image)" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 rounded-full border border-gold/40 bg-ink/60 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-gold backdrop-blur">Adbhuta</span>
+                <div class="absolute right-5 bottom-4 left-5">
+                  <p class="text-[11px] uppercase tracking-[0.3em] text-foreground/70">Ramp &amp; Styling</p>
+                  <h3 class="font-serif text-3xl font-medium tracking-[0.01em] text-foreground md:text-4xl">Fashion Walk</h3>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-5 p-5">
+                <p class="text-sm leading-relaxed text-muted-foreground">Placeholder — themed fashion show and styling showcase. </p>
+                <ul class="flex flex-col gap-2 text-sm text-foreground/80">
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days size-4 text-gold" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="sr-only">Date:</span>24/11
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin size-4 text-gold" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span class="sr-only">Venue:</span>Venue to be announced
+                  </li>
+                </ul>
+                <span aria-disabled="true" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-xs font-semibold uppercase tracking-[0.25em] transition-all cursor-not-allowed border border-dashed border-foreground/25 text-foreground/55 mt-auto w-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock size-4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  Opening soon
+                </span>
+              </div>
+            </article>
+          </li>
+
+          <!-- Event: Mgm Got Talent -->
+          <li class="reveal w-[82vw] max-w-sm shrink-0 snap-center md:w-auto md:max-w-none" style="transition-delay: 320ms">
+            <article class="group relative flex h-full flex-col overflow-hidden rounded-xl border border-gold/20 bg-ink lux-card">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img src="assets/event-talent.png" alt="Mgm Got Talent event (placeholder image)" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 rounded-full border border-gold/40 bg-ink/60 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-gold backdrop-blur">Hasya</span>
+                <div class="absolute right-5 bottom-4 left-5">
+                  <p class="text-[11px] uppercase tracking-[0.3em] text-foreground/70">individual/group</p>
+                  <h3 class="font-serif text-3xl font-medium tracking-[0.01em] text-foreground md:text-4xl">Mgm Got Talent</h3>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-5 p-5">
+                <p class="text-sm leading-relaxed text-muted-foreground">Placeholder — painting, poetry, stand-up, open mic and other cultural events.</p>
+                <ul class="flex flex-col gap-2 text-sm text-foreground/80">
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days size-4 text-gold" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="sr-only">Date:</span>24/11
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin size-4 text-gold" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span class="sr-only">Venue:</span>
+                  </li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScU0vYB0_EGE-5UZY_cXICciftku2QuVM9vOiyU-C9X9cmJIA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-xs font-semibold uppercase tracking-[0.25em] transition-all lux-btn bg-gold text-ink hover:shadow-[0_0_30px_-6px_var(--gold)] mt-auto w-full">
+                  Register
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  <span class="sr-only">(opens Google Form in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+        <p class="mt-2 text-center text-xs text-muted-foreground md:hidden">Swipe to see all events</p>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section id="gallery" aria-labelledby="gallery-title" class="relative px-5 py-24 md:px-8 md:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal flex max-w-2xl flex-col gap-4 mx-auto items-center text-center" style="transition-delay: 0ms">
+          <div class="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+            <span class="h-px w-8 bg-gradient-to-r from-transparent to-gold/70" aria-hidden="true"></span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="pl-[0.4em]">Memories</span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="h-px w-8 bg-gradient-to-l from-transparent to-gold/70" aria-hidden="true"></span>
+          </div>
+          <h2 id="gallery-title" class="font-serif text-4xl font-medium leading-[1.05] tracking-[0.01em] text-balance text-foreground md:text-6xl">Gallery</h2>
+          <p lang="hi" class="font-deva text-xl tracking-wide text-crimson md:text-2xl">स्मृतियाँ</p>
+          <p class="max-w-xl text-pretty font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">Festivals, performances, candid moments and everything that happens behind the curtain.</p>
+        </div>
+
+        <!--
+          Gallery photos. To add a photo, copy one <li> block and change the img src and alt (twice).
+          The pattern is: every 3rd photo is tall (aspect-[4/5]), the others are aspect-[4/3].
+        -->
+        <ul id="gallery-grid" class="mt-14 columns-2 gap-3 md:columns-3 md:gap-4 lg:columns-4">
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: NAVRAS members in festive outfits">
+              <img src="assets/gallery-01.jpg" alt="NAVRAS members in festive outfits" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Two members with a bouquet">
+              <img src="assets/gallery-02.jpg" alt="Two members with a bouquet" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Members sharing a meal together">
+              <img src="assets/gallery-03.jpg" alt="Members sharing a meal together" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Group photo on the auditorium stage">
+              <img src="assets/gallery-04.jpg" alt="Group photo on the auditorium stage" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Speaker at the podium during a stage event">
+              <img src="assets/gallery-05.jpg" alt="Speaker at the podium during a stage event" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Crowd dancing at a festival night">
+              <img src="assets/gallery-06.jpg" alt="Crowd dancing at a festival night" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Committee in matching t-shirts on stage">
+              <img src="assets/gallery-07.jpg" alt="Committee in matching t-shirts on stage" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Group photo in front of the NAVRAS stage screen">
+              <img src="assets/gallery-08.jpg" alt="Group photo in front of the NAVRAS stage screen" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Team group photo">
+              <img src="assets/gallery-09.jpg" alt="Team group photo" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Performers dancing on stage at night">
+              <img src="assets/gallery-10.jpg" alt="Performers dancing on stage at night" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Committee group photo on stage">
+              <img src="assets/gallery-11.jpg" alt="Committee group photo on stage" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Members at an outdoor evening event">
+              <img src="assets/gallery-12.jpg" alt="Members at an outdoor evening event" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Sufi Suroor music performance">
+              <img src="assets/gallery-13.jpg" alt="Sufi Suroor music performance" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Members posing in the auditorium">
+              <img src="assets/gallery-14.jpg" alt="Members posing in the auditorium" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Performers in traditional costumes">
+              <img src="assets/gallery-15.jpg" alt="Performers in traditional costumes" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Winners with their certificates">
+              <img src="assets/gallery-16.jpg" alt="Winners with their certificates" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Nirvana '25 entrance arch at night">
+              <img src="assets/gallery-17.jpg" alt="Nirvana '25 entrance arch at night" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Nirvana '25 banner">
+              <img src="assets/gallery-18.jpg" alt="Nirvana '25 banner" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Nirvana sign display">
+              <img src="assets/gallery-19.jpg" alt="Nirvana sign display" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Members making rangoli in the auditorium">
+              <img src="assets/gallery-20.jpg" alt="Members making rangoli in the auditorium" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: NAVRAS members group photo">
+              <img src="assets/gallery-21.jpg" alt="NAVRAS members group photo" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Releasing balloons at the inauguration">
+              <img src="assets/gallery-22.jpg" alt="Releasing balloons at the inauguration" width="800" height="1000" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/5]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+          <li class="mb-3 break-inside-avoid md:mb-4">
+            <button type="button" class="group relative block w-full overflow-hidden rounded-lg border border-border" aria-label="Open image: Stage performance in front of the college building">
+              <img src="assets/gallery-23.jpg" alt="Stage performance in front of the college building" width="800" height="700" loading="lazy" decoding="async" class="w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110 aspect-[4/3]">
+              <span class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Lightbox (filled in by js/main.js) -->
+      <dialog id="lightbox" aria-label="Image viewer" class="m-0 h-dvh max-h-none w-screen max-w-none bg-transparent p-0 backdrop:bg-ink/95 backdrop:backdrop-blur-sm">
+        <div data-lightbox-stage class="flex h-full flex-col items-center justify-center gap-4 p-4">
+          <div class="relative h-[70dvh] w-full max-w-5xl">
+            <img id="lightbox-img" src="placeholder.svg" alt="" class="absolute inset-0 size-full object-contain">
+          </div>
+          <p id="lightbox-caption" class="text-center text-sm text-foreground/80"></p>
+          <div class="flex items-center gap-3">
+            <button type="button" id="lightbox-prev" aria-label="Previous image" class="flex size-12 items-center justify-center rounded-full border border-gold/40 text-gold hover:bg-gold hover:text-ink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left size-5" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <span id="lightbox-count" class="min-w-14 text-center text-xs tracking-[0.2em] text-muted-foreground">1 / 23</span>
+            <button type="button" id="lightbox-next" aria-label="Next image" class="flex size-12 items-center justify-center rounded-full border border-gold/40 text-gold hover:bg-gold hover:text-ink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right size-5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+          <button type="button" id="lightbox-close" aria-label="Close image viewer" class="absolute top-4 right-4 flex size-12 items-center justify-center rounded-full border border-foreground/20 bg-ink/70 text-foreground hover:text-gold">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-5" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section id="team" aria-labelledby="team-title" class="relative bg-card/40 px-5 py-24 md:px-8 md:py-32">
+      <div class="mx-auto max-w-6xl">
+        <div class="reveal flex max-w-2xl flex-col gap-4 mx-auto items-center text-center" style="transition-delay: 0ms">
+          <div class="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+            <span class="h-px w-8 bg-gradient-to-r from-transparent to-gold/70" aria-hidden="true"></span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="pl-[0.4em]">The Ensemble</span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="h-px w-8 bg-gradient-to-l from-transparent to-gold/70" aria-hidden="true"></span>
+          </div>
+          <h2 id="team-title" class="font-serif text-4xl font-medium leading-[1.05] tracking-[0.01em] text-balance text-foreground md:text-6xl">Our Team</h2>
+          <p lang="hi" class="font-deva text-xl tracking-wide text-crimson md:text-2xl">हमारी टीम</p>
+          <p class="max-w-xl text-pretty font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">The people who turn ideas into nights to remember.</p>
+        </div>
+
+        <div class="mt-16">
+          <h3 class="flex items-center justify-center gap-4 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+            <span class="h-px w-10 bg-gold/40" aria-hidden="true"></span>
+            <span class="pl-[0.4em]">Committee Heads</span>
+            <span class="h-px w-10 bg-gold/40" aria-hidden="true"></span>
+          </h3>
+          <!--
+            Team cards. To change a photo, change the img src.
+            Use object-[center_80%] to pick which part of a tall photo shows (0% = top, 100% = bottom).
+          -->
+          <ul class="mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-4 md:gap-6 lg:grid-cols-4">
+            <li class="reveal" style="transition-delay: 0ms">
+              <article class="lux-card group flex h-full flex-col rounded-lg border border-gold/25 bg-ink p-2">
+                <div class="relative overflow-hidden rounded-md bg-gradient-to-b from-crimson-deep/50 via-ink to-ink aspect-[4/5]">
+                  <img src="assets/rohit-siloriya.jpg" alt="Portrait of Rohit Siloriya, HEAD" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover object-[center_80%] transition-transform duration-700 ease-out group-hover:scale-105">
+                  <div class="pointer-events-none absolute inset-0 rounded-md ring-1 ring-inset ring-gold/15"></div>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 top-1.5 left-1.5 border-t border-l"></span>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 top-1.5 right-1.5 border-t border-r"></span>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 bottom-1.5 left-1.5 border-b border-l"></span>
+                </div>
+                <div class="flex flex-1 flex-col items-center px-1 pt-4 pb-3 text-center">
+                  <h4 class="font-serif font-medium text-balance text-foreground text-xl md:text-2xl">Rohit Siloriya</h4>
+                  <span class="my-2 h-px w-8 bg-gold/50 transition-all duration-500 group-hover:w-14" aria-hidden="true"></span>
+                  <p class="font-medium uppercase text-gold text-[11px] tracking-[0.28em]">HEAD</p>
+                </div>
+              </article>
+            </li>
+            <li class="reveal" style="transition-delay: 80ms">
+              <article class="lux-card group flex h-full flex-col rounded-lg border border-gold/25 bg-ink p-2">
+                <div class="relative overflow-hidden rounded-md bg-gradient-to-b from-crimson-deep/50 via-ink to-ink aspect-[4/5]">
+                  <img src="assets/shashwat-vijayvergia.jpg" alt="Portrait of Shashwat Vijayvergia, HEAD" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover object-[center_80%] transition-transform duration-700 ease-out group-hover:scale-105">
+                  <div class="pointer-events-none absolute inset-0 rounded-md ring-1 ring-inset ring-gold/15"></div>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 top-1.5 left-1.5 border-t border-l"></span>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 top-1.5 right-1.5 border-t border-r"></span>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 bottom-1.5 left-1.5 border-b border-l"></span>
+                </div>
+                <div class="flex flex-1 flex-col items-center px-1 pt-4 pb-3 text-center">
+                  <h4 class="font-serif font-medium text-balance text-foreground text-xl md:text-2xl">Shashwat Vijayvergia</h4>
+                  <span class="my-2 h-px w-8 bg-gold/50 transition-all duration-500 group-hover:w-14" aria-hidden="true"></span>
+                  <p class="font-medium uppercase text-gold text-[11px] tracking-[0.28em]">HEAD</p>
+                </div>
+              </article>
+            </li>
+            <li class="reveal" style="transition-delay: 160ms">
+              <article class="lux-card group flex h-full flex-col rounded-lg border border-gold/25 bg-ink p-2">
+                <div class="relative overflow-hidden rounded-md bg-gradient-to-b from-crimson-deep/50 via-ink to-ink aspect-[4/5]">
+                  <img src="assets/aparna-shrivastava.jpg" alt="Portrait of Aparna Shrivastava, HEAD" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover object-[center_80%] transition-transform duration-700 ease-out group-hover:scale-105">
+                  <div class="pointer-events-none absolute inset-0 rounded-md ring-1 ring-inset ring-gold/15"></div>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 top-1.5 left-1.5 border-t border-l"></span>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 top-1.5 right-1.5 border-t border-r"></span>
+                  <span aria-hidden="true" class="pointer-events-none absolute size-3 border-gold/70 transition-all duration-500 group-hover:size-4 bottom-1.5 left-1.5 border-b border-l"></span>
+                </div>
+                <div class="flex flex-1 flex-col items-center px-1 pt-4 pb-3 text-center">
+                  <h4 class="font-serif font-medium text-balance text-foreground text-xl md:text-2xl">Aparna Shrivastava</h4>
+                  <span class="my-2 h-px w-8 bg-gold/50 transition-all duration-500 group-hover:w-14" aria-hidden="true"></span>
+                  <p class="font-medium uppercase text-gold text-[11px] tracking-[0.28em]">HEAD</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-20">
+          <h3 class="flex items-center justify-center gap-4 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+            <span class="h-px w-10 bg-gold/40" aria-hidden="true"></span>
+            <span class="pl-[0.4em]">Core Members</span>
+            <span class="h-px w-10 bg-gold/40" aria-hidden="true"></span>
+          </h3>
+          <!-- Core member cards go here (same as a head card, but use "aspect-square", "text-lg" for the name (no md:text-2xl), and "text-[10px] tracking-[0.22em]" for the role) -->
+          <ul class="mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3 md:gap-5 lg:grid-cols-4"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-labelledby="contact-title" class="relative px-5 py-24 md:px-8 md:py-32">
+      <div class="mx-auto max-w-5xl">
+        <div class="reveal flex max-w-2xl flex-col gap-4 mx-auto items-center text-center" style="transition-delay: 0ms">
+          <div class="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+            <span class="h-px w-8 bg-gradient-to-r from-transparent to-gold/70" aria-hidden="true"></span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="pl-[0.4em]">Say Namaste</span>
+            <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+            <span class="h-px w-8 bg-gradient-to-l from-transparent to-gold/70" aria-hidden="true"></span>
+          </div>
+          <h2 id="contact-title" class="font-serif text-4xl font-medium leading-[1.05] tracking-[0.01em] text-balance text-foreground md:text-6xl">Contact</h2>
+          <p lang="hi" class="font-deva text-xl tracking-wide text-crimson md:text-2xl">संपर्क</p>
+        </div>
+
+        <ul class="mt-12 grid gap-4 md:grid-cols-2">
+          <!-- Instagram -->
+          <li class="reveal md:col-start-1 md:row-start-1" style="transition-delay: 0ms">
+            <a href="https://www.instagram.com/navras.2026/" target="_blank" rel="noopener noreferrer" class="group flex h-full items-start gap-4 rounded-xl border p-5 border-gold/20 lux-card">
+              <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-crimson-deep/60 text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-1 pt-0.5">
+                <span class="text-[11px] uppercase tracking-[0.3em] text-muted-foreground">Instagram</span>
+                <span class="break-words text-base leading-relaxed text-foreground transition-colors group-hover:text-gold">@navras.2026</span>
+                <span class="sr-only">(opens Instagram in a new tab)</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 size-4 shrink-0 text-gold/50 transition-colors group-hover:text-gold" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </li>
+
+          <!-- Phone -->
+          <li class="reveal md:col-start-2 md:row-span-2 md:row-start-1" style="transition-delay: 80ms">
+            <div class="flex h-full items-start gap-4 rounded-xl border p-5 border-gold/20 lux-card">
+              <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-crimson-deep/60 text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-5" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+              </span>
+              <div class="flex min-w-0 flex-1 flex-col gap-1 pt-0.5">
+                <span class="text-[11px] uppercase tracking-[0.3em] text-muted-foreground">Phone &middot; Committee Heads</span>
+                <ul class="mt-1 flex flex-col divide-y divide-gold/10">
+                  <li>
+                    <a href="tel:+917773863440" class="group flex min-h-11 flex-col justify-center py-2.5" aria-label="Call Rohit Siloriya at +91 77738 63440">
+                      <span class="font-serif text-sm uppercase tracking-[0.18em] text-gold/90">Rohit Siloriya</span>
+                      <span class="whitespace-nowrap text-base tabular-nums text-foreground transition-colors group-hover:text-gold">+91 77738 63440</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+919752982031" class="group flex min-h-11 flex-col justify-center py-2.5" aria-label="Call Aparna Shrivastava at +91 97529 82031">
+                      <span class="font-serif text-sm uppercase tracking-[0.18em] text-gold/90">Aparna Shrivastava</span>
+                      <span class="whitespace-nowrap text-base tabular-nums text-foreground transition-colors group-hover:text-gold">+91 97529 82031</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+919950727599" class="group flex min-h-11 flex-col justify-center py-2.5" aria-label="Call Shashwat Vijayvergia at +91 99507 27599">
+                      <span class="font-serif text-sm uppercase tracking-[0.18em] text-gold/90">Shashwat Vijayvergia</span>
+                      <span class="whitespace-nowrap text-base tabular-nums text-foreground transition-colors group-hover:text-gold">+91 99507 27599</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <!-- Address -->
+          <li class="reveal md:col-start-1 md:row-start-2" style="transition-delay: 160ms">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=MGM+Medical+College+Indore+Madhya+Pradesh+India" target="_blank" rel="noopener noreferrer" class="group flex h-full items-start gap-4 rounded-xl border p-5 border-gold/20 lux-card">
+              <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-crimson-deep/60 text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin size-5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-1 pt-0.5">
+                <span class="text-[11px] uppercase tracking-[0.3em] text-muted-foreground">Address</span>
+                <span class="break-words text-base leading-relaxed text-foreground transition-colors group-hover:text-gold">MGM Medical College, Indore, Madhya Pradesh, India</span>
+                <span class="sr-only">(opens Google Maps in a new tab)</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 size-4 shrink-0 text-gold/50 transition-colors group-hover:text-gold" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== DEVELOPERS ===================== -->
+    <section id="developers" aria-labelledby="developers-title" class="relative bg-card/40 px-5 py-20 md:px-8 md:py-24">
+      <div class="reveal mx-auto flex max-w-3xl flex-col items-center gap-6 text-center" style="transition-delay: 0ms">
+        <div class="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.4em] text-gold">
+          <span class="h-px w-8 bg-gradient-to-r from-transparent to-gold/70" aria-hidden="true"></span>
+          <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+          <span class="pl-[0.4em]">Behind the Website</span>
+          <span class="size-1.5 rotate-45 border border-gold/70" aria-hidden="true"></span>
+          <span class="h-px w-8 bg-gradient-to-l from-transparent to-gold/70" aria-hidden="true"></span>
+        </div>
+
+        <span class="relative block size-24 shrink-0 overflow-hidden rounded-full border border-gold/50 shadow-[0_0_30px_-8px_var(--gold)] md:size-28">
+          <img src="assets/harsh-pratap-chandil-dev.png" alt="Harsh Pratap Chandil" loading="lazy" decoding="async" class="absolute top-0 left-[-62%] w-[260%] max-w-none">
+        </span>
+
+        <div class="flex flex-col gap-2">
+          <h2 id="developers-title" class="font-serif text-3xl font-medium leading-[1.1] text-balance text-foreground md:text-4xl">
+            Harsh Pratap Chandil <span class="italic text-gold">&amp; friends</span>
+          </h2>
+          <p class="font-serif text-lg italic text-muted-foreground">Designed and built with love for NAVRAS.</p>
+        </div>
+
+        <ul class="mt-2 grid w-full gap-3 sm:grid-cols-3">
+          <li class="flex flex-col items-center gap-1 rounded-xl border border-gold/20 bg-ink px-4 py-4 lux-card">
+            <span class="font-serif text-lg text-foreground">Harsh Pratap Chandil</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-gold">2024 Batch</span>
+          </li>
+          <li class="flex flex-col items-center gap-1 rounded-xl border border-gold/20 bg-ink px-4 py-4 lux-card">
+            <span class="font-serif text-lg text-foreground">Ishant Singh</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-gold">IIITM Gwalior</span>
+          </li>
+          <li class="flex flex-col items-center gap-1 rounded-xl border border-gold/20 bg-ink px-4 py-4 lux-card">
+            <span class="font-serif text-lg text-foreground">Aditya Verma</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-gold">IIST Indore</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="relative overflow-hidden border-t border-border bg-ink px-5 pt-16 pb-8 md:px-8">
+    <p lang="hi" aria-hidden="true" class="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 font-deva text-[9rem] leading-none whitespace-nowrap text-crimson/10 md:text-[16rem]">नवरस</p>
+    <div class="relative mx-auto flex max-w-6xl flex-col gap-10">
+      <div class="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+        <div class="flex max-w-sm flex-col gap-4">
+          <span class="flex items-center gap-3">
+            <img src="assets/logo.jpg" alt="NAVRAS logo" width="40" height="40" class="size-10 shrink-0 rounded-full border border-gold/50 object-cover">
+            <span class="flex flex-col leading-none">
+              <span class="font-serif text-xl font-medium tracking-[0.3em] text-foreground">NAVRAS</span>
+              <span lang="hi" class="mt-1 font-deva text-xs tracking-[0.12em] text-gold">नवरस</span>
+            </span>
+          </span>
+          <p class="font-serif text-xl italic text-foreground/85">9 Emotions. 1 Stage. Infinite Stories.</p>
+          <p class="text-sm text-muted-foreground">The Cultural Committee of MGM Medical College, Indore.</p>
+        </div>
+        <nav aria-label="Footer">
+          <ul class="grid grid-cols-2 gap-x-10 gap-y-1">
+            <li><a href="#about" class="flex min-h-11 items-center text-sm uppercase tracking-[0.2em] text-foreground/70 hover:text-gold">About</a></li>
+            <li><a href="#events" class="flex min-h-11 items-center text-sm uppercase tracking-[0.2em] text-foreground/70 hover:text-gold">Events</a></li>
+            <li><a href="#gallery" class="flex min-h-11 items-center text-sm uppercase tracking-[0.2em] text-foreground/70 hover:text-gold">Gallery</a></li>
+            <li><a href="#team" class="flex min-h-11 items-center text-sm uppercase tracking-[0.2em] text-foreground/70 hover:text-gold">Team</a></li>
+            <li><a href="#register" class="flex min-h-11 items-center text-sm uppercase tracking-[0.2em] text-foreground/70 hover:text-gold">Register</a></li>
+            <li><a href="#contact" class="flex min-h-11 items-center text-sm uppercase tracking-[0.2em] text-foreground/70 hover:text-gold">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex flex-col-reverse items-start gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="year">2026</span> NAVRAS · MGM Medical College, Indore</p>
+        <a href="https://www.instagram.com/navras.2026/" target="_blank" rel="noopener noreferrer" class="flex min-h-11 items-center gap-2 text-gold hover:text-gold-soft">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          @navras.2026
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
