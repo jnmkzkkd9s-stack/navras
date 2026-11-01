@@ -97,7 +97,7 @@ export const events: EventItem[] = [
       'Placeholder — classical, folk, Bollywood and contemporary dance. ',
     date: '23/11',
     venue: 'MGM Auditorium',
-    image: '/images/event-dance.png',
+    image: '/images/134157289937934207.jpg',
     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc-jRF8sBsCLKOwvWMehc1KjnnRpgz8ovfuZkxnfs1fy1_R0Q/viewform?usp=dialog',
   },
   {
