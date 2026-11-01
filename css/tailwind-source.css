@@ -2,8 +2,10 @@
  * Tailwind SOURCE for the static site — the page itself does NOT load this file.
  * The page uses css/styles.css, which is compiled from this file.
  *
- * You only need to rebuild if you add NEW Tailwind classes to index.html or js/main.js:
- *   cd static-site && npx @tailwindcss/cli@4.3.3 -i css/tailwind-source.css -o css/styles.css --minify
+ * You only need to rebuild if you add NEW Tailwind classes to index.html or js/main.js.
+ * From the project folder:
+ *   npm install --no-save tailwindcss@4.3.3 @tailwindcss/cli@4.3.3
+ *   npx tailwindcss -i css/tailwind-source.css -o css/styles.css --minify
  */
 @import 'tailwindcss' source(none);
 @source '../index.html';
